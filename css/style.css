@@ -1,0 +1,195 @@
+
+/* import fonts from fonts.css file */ 
+@import url(./fonts.css);
+
+
+/* css variables */ 
+@import url(./partials/_variables.css);
+
+/* import global styling */ 
+@import url(./partials/_global.css);
+
+
+/* start navigation */ 
+
+html{
+    scroll-behavior: smooth;
+}
+
+.navbar-brand{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: var(--roboto);
+    transition: .5s;
+}
+
+.navbar-brand:hover{
+    transform: scale(1.1);
+}
+
+.header_area .main-menu .navbar .navbar-brand{
+    padding: 0 2rem 0 5rem;
+}
+
+.header_area .main-menu .navbar{
+    padding: 0.5rem 20rem ;
+}
+
+.header_area .main-menu .nav-item .nav-link{
+    font: normal 500 15px/2px var(--roboto);
+    text-transform: uppercase;
+    padding: 1rem;
+    color: var(--title-color);
+}
+
+.header_area .main-menu .navbar-nav .active a{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.header_area .main-menu .navbar-nav a:hover{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+/* end navigation */ 
+
+/* Banner Area */ 
+
+.site-main .site-banner .site-title h3{
+    padding-top: 35%;
+    font-weight: 500;
+}
+
+.site-main .site-banner .site-title h3::after{
+    content: " ";
+    height: 2px;
+    width: 18vw;
+    background: black;
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-10px);
+}
+
+.site-main .site-banner .site-title h1{
+    font-size: 5rem;
+}
+
+.site-main .site-banner .site-title h4{
+    font-size: 1.5rem;
+}
+
+.site-main .site-banner .banner-image > img{
+    padding: 7rem 0;
+    width: 90rem;
+}
+
+/* End Banner Area */ 
+
+
+/* Project Area */ 
+
+.site-main .project-area{
+    padding-top: 8rem;
+}
+
+.site-main .project-area .grid .our-project > .title h4{
+    font: normal 700 25px/12px var(--roboto);
+    color: var(--title-color);
+}
+
+.site-main .project-area .grid .our-project .img a:hover img{
+    filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+}
+
+.site-main .project-area .grid .our-project > .title{
+    height: 8rem;
+}
+.web-address:hover{
+    text-decoration: none;
+}
+
+.web-links{
+    display: flex;
+    justify-content: end;
+}
+.web-links a{
+    font-size: 30px;
+    color: var(--title-color);
+    margin: 0rem 0.5rem;
+}
+
+.web-links a:hover{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+/* End Project Area */ 
+
+
+/* Skills Area */ 
+
+.site-main .skills-area{
+    padding-top: 5rem;
+}
+
+.site-main .skills-area .skills-title{
+    padding: 0 17rem;
+}
+
+.site-main .skills-area .skills-title h1{
+    font-size: 35px;
+}
+
+.site-main > .skills-area .skills{
+    height: 23rem;
+    background: rgba(248, 252, 253, 0.973);
+    padding: 2rem 0;
+    width: 16rem;
+    margin: 1rem .5rem;
+    transition: box-shadow .7s ease;
+}
+
+.site-main > .skills-area .skills:hover{
+    box-shadow: var(--box-shadow);
+}
+
+/* End Skills Area */ 
+
+
+/* Contact me */ 
+
+.site-main .contact-us-area .contact{
+    padding-top: 5rem;
+    margin: 3rem auto;
+}
+
+.site-main .contact-us-area .contact .contact-title h4{
+    font: normal 700 30px/ 30px var(--roboto);
+    color: var(--title-color);
+}
+
+.social__contact a{
+    font-size:22px;
+    color: var(--title-color)
+}
+
+.social__contact a:hover{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+/* End Contact me */ 
+
+/* Footer Area */ 
+
+footer.footer-area{
+    padding: 5rem 0;
+    background: url(../img/footer-bg.png) no-repeat;
+}
+
+
+/* End Footer */
